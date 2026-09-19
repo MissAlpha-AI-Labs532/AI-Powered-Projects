@@ -1,0 +1,37 @@
+.empty {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  color: var(--qc-ink-muted);
+}
+
+.icon {
+  color: var(--qc-green-500);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  margin: 0 0 0.35rem;
+  font-family: var(--qc-font-display);
+  font-size: 1.35rem;
+  color: var(--qc-ink);
+}
+
+.message {
+  margin: 0 auto 1.25rem;
+  max-width: 28rem;
+}
+
+.action {
+  appearance: none;
+  border: none;
+  background: var(--qc-green-700);
+  color: #fff;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--qc-radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.action:hover {
+  background: var(--qc-green-900);
+}

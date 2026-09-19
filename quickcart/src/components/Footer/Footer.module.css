@@ -1,0 +1,60 @@
+.footer {
+  margin-top: auto;
+  border-top: 1px solid var(--qc-border);
+  background: linear-gradient(180deg, transparent, rgba(10, 92, 69, 0.06));
+}
+
+.inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 2.5rem;
+  display: grid;
+  gap: 1.25rem;
+}
+
+@media (min-width: 720px) {
+  .inner {
+    grid-template-columns: 1.4fr 1fr;
+    align-items: end;
+  }
+
+  .copy {
+    grid-column: 1 / -1;
+  }
+}
+
+.brand {
+  margin: 0;
+  font-family: var(--qc-font-display);
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--qc-green-700);
+}
+
+.tagline {
+  margin: 0.35rem 0 0;
+  color: var(--qc-ink-muted);
+  max-width: 22rem;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--qc-ink);
+}
+
+.nav a:hover {
+  color: var(--qc-green-700);
+}
+
+.copy {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--qc-ink-muted);
+}
