@@ -51,31 +51,33 @@ function Shop() {
           <div className={styles.heroVisual} aria-hidden="true" />
         </section>
 
-        <div id="promo" className={styles.section}>
-          <PromoBanner locationId={location} />
-        </div>
-
-        <section
-          id="products"
-          className={styles.section}
-          aria-labelledby="qc-products-heading"
-        >
-          <div className={styles.sectionHead}>
-            <h2 id="qc-products-heading" className={styles.sectionTitle}>
-              Today’s aisle
-            </h2>
-            <p className={styles.sectionText}>
-              Filter by category or search by name.
-            </p>
+        <div className={styles.sectionWrap}>
+          <div id="promo" className={styles.section}>
+            <PromoBanner locationId={location} />
           </div>
-          <Categories value={category} onChange={setCategory} />
-          <ProductGrid
-            products={products}
-            loading={loading}
-            hasFilters={hasFilters}
-            onClearFilters={clearFilters}
-          />
-        </section>
+
+          <section
+            id="products"
+            className={styles.section}
+            aria-labelledby="qc-products-heading"
+          >
+            <div className={styles.sectionHead}>
+              <h2 id="qc-products-heading" className={styles.sectionTitle}>
+                Today’s aisle
+              </h2>
+              <p className={styles.sectionText}>
+                Filter by category or search by name.
+              </p>
+            </div>
+            <Categories value={category} onChange={setCategory} />
+            <ProductGrid
+              products={products}
+              loading={loading}
+              hasFilters={hasFilters}
+              onClearFilters={clearFilters}
+            />
+          </section>
+        </div>
       </main>
 
       <Footer />

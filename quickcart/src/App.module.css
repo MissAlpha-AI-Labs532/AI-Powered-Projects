@@ -1,21 +1,18 @@
 .main {
   width: 100%;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.25rem 3rem;
   flex: 1;
+  padding-bottom: 3rem;
 }
 
 .hero {
   position: relative;
-  margin: 1.25rem 0 1.5rem;
-  min-height: min(72vh, 34rem);
-  border-radius: var(--qc-radius-lg);
+  margin: 0 0 1.75rem;
+  min-height: calc(100vh - var(--qc-header-h));
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 2rem 1.5rem;
+  padding: 2.5rem 1.25rem 3rem;
   color: #f5fff9;
   isolation: isolate;
   animation: heroIn 0.6s ease both;
@@ -23,9 +20,15 @@
 
 @media (min-width: 768px) {
   .hero {
-    padding: 2.75rem 2.5rem;
-    min-height: min(68vh, 36rem);
+    padding: 3.5rem clamp(1.5rem, 6vw, 4rem) 4rem;
   }
+}
+
+.sectionWrap {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .heroVisual {

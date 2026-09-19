@@ -6,7 +6,7 @@
   min-width: 0;
   background: var(--qc-surface-elevated);
   border: 1px solid var(--qc-border);
-  border-radius: 999px;
+  border-radius: var(--qc-radius-md);
   padding: 0.35rem 0.75rem 0.35rem 0.85rem;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
